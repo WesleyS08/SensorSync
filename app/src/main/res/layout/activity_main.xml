@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9F9F9F"
+    tools:context=".MainActivity">
+
+    <!-- ImageView para a imagem -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/sua_imagem" />
+
+    <!-- TextView para exibir mensagens recebidas -->
+
+    <!-- TextView para exibir o contador de movimentos -->
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="207dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="204dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewMovementCount"
+        android:layout_width="245dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="81dp"
+        android:text="Contagem de Movimentos: 0"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textViewMessageHistory"
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="106dp"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:text="Histórico de Mensagens:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="265dp"
+        android:onClick="sendMessageToServer"
+        android:text="Enviar Mensagem" />
+
+
+</RelativeLayout>
